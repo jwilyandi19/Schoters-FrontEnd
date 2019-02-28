@@ -1,25 +1,22 @@
 @extends('layout.masters')
 
 @section('content')
+
+<div class="content">
+
+<div class="heading">Personalize your Schoters homepage</div>
+<div class="subheading">Pick 5 top scholarship categories that you are interested to help us deliver the most relevant infomrmation with your preferences</div>
+
+<form>
 <ul>
+    <input id="result" type="hidden" name="result">
 @foreach ($data as $row)
-    <button type="button" class="prefer-btn" id="">{{$row->name}}</button>
+    <a class="prefer-btn" value="{{$row->name}}">{{$row->name}}</a>
 @endforeach
-<script>
-    window.onload = function (ev) {
-        var count = 0;
-        $(".prefer-btn").each(function(i, el){
-            $(el).click(function(e){
-                if($(el).hasClass("active-btn")){
-                    $(el).removeClass("active-btn");
-                    count--;
-                }else if (count <5){
-                    $(el).addClass("active-btn");
-                    count++;
-                }
-            });
-        });
-    };
-    </script>
 </ul>
+    <button class="done-btn" href={{url('done')}} method="POST">Done</a>
+</form>
+
+</div>
+
 @stop

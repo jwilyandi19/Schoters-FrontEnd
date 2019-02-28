@@ -13,7 +13,8 @@ body {
 
 .navbar .span {
   text-align: center;
-  padding: 5px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: inline-block;
 }
 
@@ -33,6 +34,7 @@ body {
 
 .navbar .searchbar {
   font-size: 20px;
+  padding: 5px 5px;
   width: 800px;
   height: 50px;
   border: 1px solid #979797;
@@ -61,6 +63,13 @@ body {
   color: #545454;
 }
 
+.location {
+  font-size: 20px;
+  color: #b2b0b0;
+  margin-left: 48px;
+  margin-top: 18px;
+}
+
 .prefer-btn {
   display: inline-block;
   padding: 14px 14px;
@@ -84,6 +93,7 @@ body {
 .done-btn {
   font-family: 'Helvetica',sans-serif;
   cursor: pointer;
+  margin-top: 23px;
   font-size: 24px;
   width: 328px;
   height: 62px;

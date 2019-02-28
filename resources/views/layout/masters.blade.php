@@ -14,6 +14,6 @@
 
 <body>
     @include('layout.navbar')
-
+    @include('layout.location')
     @yield('content')
 </body>

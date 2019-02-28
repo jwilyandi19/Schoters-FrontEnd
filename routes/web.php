@@ -12,4 +12,5 @@
 */
 
 Route::get('home/', 'PersonalizeController@home');
-Route::get('done/', 'FinishController@home');
+Route::post('posting/', 'FinishController@post');
+Route::get('done/','FinishController@done');
